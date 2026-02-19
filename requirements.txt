@@ -1,30 +1,14 @@
-# LLM
-openai>=1.30.0
-langchain>=0.3.0
-langgraph>=0.2.0
-langchain-openai>=0.2.0
-
-# RAG
-llama-index-core>=0.11.0
-llama-index-vector-stores-qdrant>=0.3.0
-llama-index-embeddings-openai>=0.2.0
-qdrant-client>=1.10.0
-
-# Data
-pandas>=2.0.0
-requests
-
-# API
+langchain-groq
+langchain-core
+langchain-community
+langgraph
 fastapi
 uvicorn
-
-# Eval
-ragas
-deepeval
-
-# Observabilité
-langfuse
-
-# Utils
+qdrant-client
+sentence-transformers
+pandas
+requests
 python-dotenv
+ragas
+datasets
 jupyterlab

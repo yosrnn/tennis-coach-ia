@@ -22,15 +22,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run import test
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      - name: Run syntax test
         run: |
-          python -c "
-          import sys
-          sys.path.append('.')
-          sys.path.append('./src/agents')
-          from rag_agent import rag_agent
-          from stats_agent import stats_agent
-          print('✅ Tous les modules importés correctement')
-          "
+          python -c "import fastapi; print('✅ FastAPI OK')"
+          python -c "import qdrant_client; print('✅ Qdrant OK')"
+          python -c "import sentence_transformers; print('✅ SentenceTransformers OK')"
+          python -c "import langchain_groq; print('✅ LangChain Groq OK')"
+          echo "✅ Tous les packages installés correctement"

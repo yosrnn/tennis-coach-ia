@@ -1,0 +1,36 @@
+name: Coach IA — CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run import test
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python -c "
+          import sys
+          sys.path.append('.')
+          sys.path.append('./src/agents')
+          from rag_agent import rag_agent
+          from stats_agent import stats_agent
+          print('✅ Tous les modules importés correctement')
+          "

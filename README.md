@@ -5,7 +5,7 @@ Système multi-agents RAG pour l'analyse de performance tennis ATP.
 ---
 
 ## Architecture
-![Architecture Coach IA](docs/architecture.png)
+![Architecture Coach IA](docs/Architecture.png)
 ```
 
 Question du coach

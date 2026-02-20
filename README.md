@@ -47,7 +47,7 @@ Base vectorielle locale, pas de dépendance cloud, maîtrise totale des données
 Les questions de sens ("comment joue Djokovic ?") et les questions de chiffres ("combien d'aces en 2023 ?") nécessitent des approches différentes. Le routing LLM évite de programmer des règles fixes fragiles.
 
 **Pourquoi LLM-as-a-judge ?**  
-RAGAS v1.0 ne supporte plus les LLMs open-source. On implémente notre propre évaluation — plus flexible, indépendante d'OpenAI, et explicable en entretien.
+RAGAS v1.0 ne supporte plus les LLMs open-source. On implémente notre propre évaluation plus flexible et indépendante d'OpenAI.
 
 **Pourquoi Groq ?**  
 Gratuit, rapide, API standard compatible LangChain. Facilement remplaçable par OpenAI ou Anthropic sans changer l'architecture.

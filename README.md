@@ -1,7 +1,6 @@
 # Coach IA — Tennis Performance Analytics
 
 Système multi-agents RAG pour l'analyse de performance tennis ATP.  
-Construit comme projet de démonstration pour le poste **Chef de Projet IA** chez Mouratoglou Academy.
 
 ---
 

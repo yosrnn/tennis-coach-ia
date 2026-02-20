@@ -1,12 +1,14 @@
 # Coach IA — Tennis Performance Analytics
 
-Système multi-agents RAG pour l'analyse de performance tennis ATP.  
+Système multi-agents RAG pour l'analyse de performance tennis ATP.
 
 ---
 
 ## Architecture
 
 ```
+![Architecture Coach IA](docs/architecture.png)
+
 Question du coach
         ↓
    Orchestrateur (LLM)
@@ -160,6 +162,14 @@ curl -X POST http://127.0.0.1:8000/ask \
 ```
 
 ---
+
+### Lancer l'interface web
+
+```bash
+streamlit run src/app.py
+```
+
+Interface disponible sur **http://localhost:8501**
 
 ## Stack technique
 
